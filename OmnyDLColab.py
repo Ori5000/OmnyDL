@@ -44,7 +44,7 @@ with open("Omny-Downloader/podcast.rss",encoding ="utf8") as f:
    rss = f.read()
 
 urls = re.findall(URL_REGEX, rss)
-VALID_DOMAIN = 'https://traffic.omny.fm/d/clips/'
+VALID_DOMAIN = 'traffic.omny.fm/d/clips/'
 valid_urls = []
 for url in urls:
 	if VALID_DOMAIN in url:
