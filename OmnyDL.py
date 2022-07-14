@@ -28,7 +28,7 @@ try:
 except:
 	try:
 		RSS_URL = f'https://omny.fm/shows/{showName}/playlists/{showName}.rss'
-    	wget.download(RSS_URL, out='podcast.rss')
+		wget.download(RSS_URL, out='podcast.rss')
 	except:
 		print(f'ERROR: Show does not exist!\nIn order to fix that you need to open "config.ini" and change the show name.')
 		exit()
