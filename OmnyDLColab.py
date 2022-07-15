@@ -28,7 +28,9 @@ else:
 	try:
 		if not args.manRSS:
 			showName = config.readlines()[1].rstrip()[11:]
-		downPath = config.readlines()[2].rstrip()[11:]
+			downPath = config.readlines()[2].rstrip()[11:]
+		else:
+			downPath = config.readlines()[1].rstrip()[11:]
 	except:
 		config = open('Omny-Downloader/config.ini', 'w+')
 		downPath = input('Please insert the location you want the podcasts to be downloaded to (Default is /content/drive/MyDrive/Omny Podcasts/, click ENTER to use that.)')
